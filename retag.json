@@ -1,5 +1,5 @@
 {
-    "targetRepo" : "docker-local",
+    "targetRepo" : "docker-release",
     "dockerRepository" : "docker-framework",
     "tag" : "@",
     "targetTag" : "latest",
