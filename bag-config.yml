@@ -1,6 +1,6 @@
 version: 1
 issues:
-  serverID: my-artifactory-server
+  serverID: beta_dev
   trackerName: JIRA
   regexp: (.+-[0-9]+)\s-\s(.+)
   keyGroupIndex: 1
