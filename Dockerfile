@@ -1,4 +1,4 @@
-FROM artifactory-dev.jfrogbeta.com/docker-local/ubuntu:xenial
+FROM artifactory-dev.jfrogbeta.com/docker-local/dsop/ubi7:latest
 
 MAINTAINER Mark Galpin markg@jfrog.com
 
@@ -9,6 +9,6 @@ ADD tomcat/apache-tomcat-9.tar.gz /home/exec
 RUN /bin/bash -c cd /home/exec; mv /home/exec/apache-tomcat-9.* /home/exec/tomcat
 ADD tomcat/server.xml /home/exec/tomcat/conf
 ENV CATALINA_HOME=/home/exec/tomcat
-ENV TEST_ENV=2
+ENV TEST_ENV=3
 
 CMD /bin/bash -c cd /home/exec; /home/exec/tomcat/bin/catalina.sh run
